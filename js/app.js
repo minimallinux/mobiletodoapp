@@ -31,7 +31,7 @@ swal("Hold On!", "You have to enter an activity first!", "info");
 });
 //Function for if keybboard input is required to add items
 document.querySelector('#item').addEventListener('keydown', function( e ) {
-var value = this.value;
+var value = this.value;	
 if(e.code === 'Enter' && value) {
 function addItem() {
 	addItemToDOM(value);
