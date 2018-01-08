@@ -1,0 +1,263 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?3wf7lg');
+  src:  url('../fonts/icomoon.eot?3wf7lg#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?3wf7lg') format('truetype'),
+    url('../fonts/icomoon.woff?3wf7lg') format('woff'),
+    url('../fonts/icomoon.svg?3wf7lg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+}
+
+.icon-bin:before {
+  content: "\e9ac";
+}
+.icon-plus:before {
+  content: "\ea0a";
+}
+.icon-checkmark:before {
+  content: "\ea10";
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v18-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/roboto-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-v18-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v18-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+       url('../fonts/roboto-v18-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-v18-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v18-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-v18-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-v18-latin-700.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+body {
+background:#edf0f1; 
+padding: 80px;
+}
+body, input {
+font-family:'Roboto', sans-serif;
+}
+header {
+width:100%;
+height:80px;
+position:fixed;
+top:0px;
+left:0px;
+z-index:5;
+padding:12px;
+background:#25b99a;
+box-shadow:0px 2px 4px rgba(44,62,80,0.15);
+border-bottom-right-radius:10px;
+border-bottom-left-radius:10px;
+}
+header input {
+width:100%;
+height:50px;
+float:left;
+color:#fff;
+font-size:15px;
+font-weight:400;
+text-indent:20px;
+padding:0 60px 0 0;
+background:rgba(255,255,255,0.2);
+border-top-left-radius:5px;
+border-bottom-left-radius:5px;
+border-top-right-radius:25px;
+border-bottom-right-radius:25px;
+border:0px;
+box-shadow:none;
+outline:none;
+appearance:none;
+-webkit-appearance:none;
+-moz-appearance:none;
+-ms-appearance:none;
+-o-appearance:none;
+}
+header input::-webkit-input-placeholder {
+color:rgba(255,255,255,0.75)!important;
+}
+header button {
+width:50px;
+height:50px;
+position:absolute;
+top:12px;
+right:12px; 
+z-index:2;
+border-radius:25px;
+background:#fff;
+border:0px;
+box-shadow:none;
+outline:none;
+cursor:pointer;
+-webkit-appearance: none;
+-moz-appearance: none;
+-ms-appearance: none;
+-o-appearance: none;
+appearance: none;
+}
+header button i {
+font-size:20px;
+color:#25b99a;
+}
+.container {
+width: 100%;
+float: left;
+padding: 15px;
+}
+ul {
+width: 100%;
+float: left;
+}
+ul li {
+width: 100%;
+float: left;
+text-align: center;
+display: block;
+font-size: 14px;
+font-weight: 500;
+color:#444;
+line-height:22px;
+min-height: 50px;
+background: #fff;
+border-radius:5px;
+position: relative;
+box-shadow:0px 1px 2px rgba(44,62,80,0.10);
+margin: 0 0 10px 0;
+padding: 14px 100px 14px 14px;
+}
+ul li:last-of-type {
+margin: 0;
+}
+ul.completed {
+padding: 0;
+margin-top: 10px; 
+}
+ul li .buttons {
+width: 100px;
+height: 50px;
+position: absolute;
+top: 0;
+right: 0;
+}
+ul li .buttons button i {
+font-size: 20px;
+}
+ul.todo:after {
+font-size: 12px;
+color: #808080;
+content:  "You have nothing to do, so add a task to get started.";
+}
+ul.completed:not(:empty) {
+padding: 60px 0 0 0;
+}
+.swal-button {
+  background-color:#25b99a!important;
+  font-size: 14px;
+}
+.buttons .remove i {
+color:#c0cecb;
+}
+.buttons .remove i:hover {
+color:#e85656;
+}
+.buttons .complete i {
+color:#25b99a;
+border: 1.5px solid;
+border-radius: 50%;
+padding: 3px;
+}
+.buttons .complete i:hover {
+background: #25b99a;
+color: #fff;
+border: 1.5px solid #25b99a;
+}
+ul.completed li .buttons .complete i {
+background: #25b99a;
+color:#fff;
+border: 1.5px solid #25b99a;
+border-radius: 50%;
+padding: 3px;
+}
+ul.completed li .buttons .complete i:hover {
+background: #fff; 
+color: #25b99a;
+border: 1.5px solid #25b99a;
+}
+ul.todo li .buttons button {
+width: 50px;
+height: 50px; 
+float: left;
+background: none;
+position: relative;
+border:0px;
+box-shadow: none;
+outline: none;
+-webkit-appearance: none;
+-moz-appearance: none;
+-ms-appearance: none;
+-o-appearance: none;
+appearance: none;
+}
+ul.todo li .buttons button:last-of-type:before {
+content: '';
+width:1px;
+height: 30px;
+position: absolute;
+top: 10px;
+left: 0;
+background:#edf0f1;
+}
+ul.completed li .buttons button {
+width: 50px;
+height: 50px; 
+float: left;
+background: none;
+position: relative;
+border:0px;
+box-shadow: none;
+outline: none;
+-webkit-appearance: none;
+-moz-appearance: none;
+-ms-appearance: none;
+-o-appearance: none;
+appearance: none;
+}
+ul.completed li .buttons button:last-of-type:before {
+content: '';
+width:1px;
+height: 30px;
+position: absolute;
+top: 10px;
+left: 0;
+background:#edf0f1;
+}
