@@ -45,7 +45,7 @@ document.styleSheets[0].insertRule('ul.todo:after {display:none}');
 }	
 addItem(value);
 }
-})
+});
 //The addItemToDOM function adds a new item to the todo list
 function addItemToDOM(text, completed) {
 var list = (completed) ? document.querySelector('.completed'):document.querySelector('.todo');
